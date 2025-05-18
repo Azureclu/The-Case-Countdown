@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Newsletter Countdown</title>
+    <title>Mystery Times - Countdown</title>
     <link rel="stylesheet" href="styles.css">
     <script>
         function countdown() {
-            const eventDate = new Date("May 30, 2025 00:00:00").getTime();
+            const eventDate = new Date("June 1, 2025 00:00:00").getTime();
             setInterval(() => {
                 const now = new Date().getTime();
                 const timeLeft = eventDate - now;
@@ -13,21 +13,22 @@
                 const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
                 const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
                 const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-                document.getElementById("countdown").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+                document.getElementById("countdown").innerHTML = `🕵️‍♂️ ${days}d ${hours}h ${minutes}m ${seconds}s`;
             }, 1000);
         }
     </script>
 </head>
 <body onload="countdown()">
-    <div class="newsletter-header">
-        <h1>Exciting Event Coming Soon!</h1>
+    <div class="header">
+        <h1>📰 Mystery Times</h1>
+        <h2>Breaking News: The Truth Will Be Revealed</h2>
     </div>
-    <p>Stay tuned for updates. The countdown has begun!</p>
+    <p>Strange occurrences have been reported. The clock is ticking. What happens when time runs out?</p>
     <div class="countdown-box">
         <span id="countdown"></span>
     </div>
     <div class="footer">
-        <p>Subscribe to our newsletter for more updates!</p>
+        <p>Keep watching. The next clue arrives soon...</p>
     </div>
 </body>
-            </html>
+</html>
