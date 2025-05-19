@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mystery Times - Countdown</title>
+    <title>The Case Countdown</title>
     <link rel="stylesheet" href="styles.css">
     <script>
         function countdown() {
@@ -13,14 +13,14 @@
                 const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
                 const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
                 const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-                document.getElementById("countdown").innerHTML = `🕵️‍♂️ ${days}d ${hours}h ${minutes}m ${seconds}s`;
+                document.getElementById("countdown").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
             }, 1000);
         }
     </script>
 </head>
 <body onload="countdown()">
     <div class="header">
-        <h1>📰 Mystery Times</h1>
+        <h1>Robloxia Bulletin</h1>
         <h2>Breaking News: The Truth Will Be Revealed</h2>
     </div>
     <p>Strange occurrences have been reported. The clock is ticking. What happens when time runs out?</p>
